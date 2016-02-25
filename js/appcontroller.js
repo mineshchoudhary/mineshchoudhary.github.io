@@ -11,28 +11,43 @@ app.config(function($routeProvider) {
 
 	.when('/skills', {
 		templateUrl : 'templates/skills.html',
-		controller  : 'profileController'
+		controller  : 'skillController'
 	})
 
 	.when('/work', {
 		templateUrl : 'templates/work.html',
-		controller  : 'profileController'
+		controller  : 'workController'
 	})
 
 	.when('/resume', {
 		templateUrl : 'templates/resume.html',
-		controller  : 'profileController'
+		controller  : 'resumeController'
 	})
 
 	.when('/contact', {
 		templateUrl : 'templates/contact-modal.html',
-		controller  : 'profileController'
+		controller  : 'contactController'
 	})
 	
 	.otherwise({redirectTo: '/profile'});
 })
 
 app.controller('profileController',function($scope) {
-	$scope.demo = "Demo";
-	console.log("-=-=-=-=-=-=");
+	console.log("-=-=-=profileController-=-=-=");
+});
+
+app.controller('skillController',function($scope) {
+	console.log("-=-=-=skillController-=-=-=");
+});
+
+app.controller('workController',function($scope) {
+	console.log("-=-=-=workController-=-=-=");
+});
+
+app.controller('resumeController',function($scope) {
+	console.log("-=-=-=resumeController-=-=-=");
+});
+
+app.controller('contactController',function($scope) {
+	console.log("-=-=-=contactController-=-=-=");
 });
